@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "notiapp",
+    "slug": "notiapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.shjung.test"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.POST_NOTIFICATIONS"
+      ],
+      "package": "com.shjung.test",
+      "googleServicesFile": "./android/app/google-services.json"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+
+ "notification": {
+  "icon": "./assets/noti-icon.png",
+  "color": "#4798FF"
+},
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+
+          "defaultChannel": "default"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "96f1e004-304d-4d10-98bb-349ae3f0c7ab"
+      }
+    }
+  }
+}
